@@ -7,6 +7,7 @@ jobs:
     - dotnet: 2.1.502
     
 script:
+    - snap install dotnet-sdk
     - dotnet test Oware.Tests
 os:
     - linux
