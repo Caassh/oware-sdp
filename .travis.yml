@@ -17,7 +17,7 @@ jobs:
         <<: *deploy_base
         file: "ImagePoster4DTF_macOS"
 script:
-    - snap install dotnet-sdk
+    - sudo snap install dotnet-sdk
     - dotnet test Oware.Tests
 os:
     - linux
