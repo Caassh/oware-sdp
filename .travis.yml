@@ -6,7 +6,7 @@ jobs:
     - dotnet: 5.0.203
     - dotnet: 2.1.502
 script:
- - dotnet test Oware.Tests
+ - dotnet test
 os:
 - linux
 - osx
