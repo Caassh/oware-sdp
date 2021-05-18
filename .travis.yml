@@ -5,22 +5,13 @@ jobs:
   include:
     - dotnet: 5.0
     - dotnet: 2.1.502
-    - stage: "Compile for amd64 macOS"
-      os: osx
-      osx_image: xcode11.5
-      dotnet: 5.0
-      script:
-        - dotnet restore
-        - dotnet publish -r osx-x64 --configuration Release -p:PublishSingleFile=true
-        - "cp ./ImagePoster4DTF/bin/Release/netcoreapp3.1/osx-x64/publish/ImagePoster4DTF ./ImagePoster4DTF_macOS"
-      deploy:
-        <<: *deploy_base
-        file: "ImagePoster4DTF_macOS"
+
 script:
     - sudo snap install dotnet-sdk
     - dotnet test Oware.Tests
 os:
     - linux
+    - osx
 
 
 dist: focal
