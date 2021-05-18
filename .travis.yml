@@ -6,8 +6,10 @@ jobs:
     - dotnet: 5.0.203
     
 script:
- - dotnet test Oware.Tests
+    - dotnet --info
+    - snap install dotnet-sdk
+    - sudo apt install dotnet-sdk
+    - dotnet test Oware.Tests
 os:
-- linux
-- osx
-dist: focal
+    - focal
+    - osx
