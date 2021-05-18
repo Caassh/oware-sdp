@@ -6,8 +6,8 @@ jobs:
     - dotnet: 5.0.203
     - dotnet: 2.1.502
 script:
- - dotnet test
+ - dotnet test Oware.Tests
 os:
-- focal
+- linux
 - osx
 dist: focal
