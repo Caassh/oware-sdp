@@ -25,18 +25,18 @@ namespace Oware.Tests
             Assert.AreEqual(4,h.GetCount(),"Houses that have been reset must have 4 seeds in them");
         }
 
-        [Test]
-        public void AddSeedtoScoreHouseShoulCallAddSeed()
-        {
-            //ARRANGE:
-            Player p1 = new Player("Foo");
-            Player p2 = new Player("Bar");
-            Board b = new Board(p1,p2);
+        // [Test]
+        // public void AddSeedtoScoreHouseShoulCallAddSeed()
+        // {
+        //     //ARRANGE:
+        //     Player p1 = new Player("Foo");
+        //     Player p2 = new Player("Bar");
+        //     Board b = new Board(p1,p2);
+        //     p1.Received().AddSeed()
 
+        //     //ACT
 
-            //ACT
-
-            //ASSERT
-        }
+        //     //ASSERT
+        // }
     }
 }
