@@ -3,12 +3,13 @@ solution: Oware.sln
 mono: none
 jobs:
   include:
-    - dotnet: 5.0.203
+    - dotnet: 5.0
+    - dotnet: 2.1.502
     
 script:
     - dotnet --info
-    - snap install dotnet-sdk
-    - sudo apt install dotnet-sdk
+    - sudo snap install dotnet-sdk-5.0
+    - sudo apt-get install dotnet-sdk-5.0
     - dotnet test Oware.Tests
 os:
     - focal
